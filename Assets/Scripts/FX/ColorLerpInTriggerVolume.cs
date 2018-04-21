@@ -5,13 +5,15 @@ using UnityStandardAssets.ImageEffects;
 [ExecuteInEditMode, RequireComponent(typeof(BoxCollider))]
 public class ColorLerpInTriggerVolume : MonoBehaviour {
 
+
+    [Header("Trigger Parameters")]
     public float m_size;
     public Color m_newColor = Color.red;
     BoxCollider m_box;
     EdgeDetectionColor edgeDetection;
-    [SerializeField]
-    AnimationCurve m_easyInCurve;
 
+    [SerializeField, Header("Lerp Parameters")]
+    AnimationCurve m_easyInCurve;
     [Range(.1f, 5f), SerializeField]
     float m_lerpDuration;
 
