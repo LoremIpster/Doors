@@ -9,6 +9,8 @@ public class ColorLerpInTriggerVolume : MonoBehaviour {
     public Color m_newColor = Color.red;
     BoxCollider m_box;
     EdgeDetectionColor edgeDetection;
+    [SerializeField]
+    AnimationCurve m_easyInCurve;
 
     [Range(.1f, 5f), SerializeField]
     float m_lerpDuration;
@@ -17,6 +19,7 @@ public class ColorLerpInTriggerVolume : MonoBehaviour {
     {
         m_box = GetComponent<BoxCollider>();
         edgeDetection = Camera.main.GetComponent<EdgeDetectionColor>();
+        m_box.isTrigger = true;
         
     }
 
@@ -39,9 +42,11 @@ public class ColorLerpInTriggerVolume : MonoBehaviour {
     IEnumerator Lerp()
     {
         float elapsed = 0;
+        Color initialColor = edgeDetection.edgesOnlyBgColor;
         while (elapsed <= m_lerpDuration)
         {
-
+            float step = m_easyInCurve.Evaluate(elapsed / m_lerpDuration);
+            edgeDetection.edgesOnlyBgColor = Color.Lerp(initialColor, m_newColor, step);
             elapsed += Time.deltaTime;
             yield return null;
         }
