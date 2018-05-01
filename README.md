@@ -1,6 +1,6 @@
 ## Porte-à-porte
 
-This game is actually in development and will say the light of the day at FLOP's Rooftop Arcade, soon to be announced.
+This game is actually in development and will see the light of the day at FLOP's Rooftop Arcade, soon to be announced.
 
 ## Information
 
