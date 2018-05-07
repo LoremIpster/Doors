@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assembly-CSharp-firstpass</name>
+    </assembly>
+    <members>
+        <member name="M:UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController.GroundCheck">
+            sphere cast down just beyond the bottom of the capsule to see if the capsule is colliding round the bottom
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.Blur.iterations">
+            Blur iterations - larger number means more blur.
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.Blur.blurSpread">
+            Blur spread for each iteration. Lower values
+            give better looking blur, but require more iterations to
+            get large blurs. Value is usually between 0.5 and 1.0.
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.ContrastStretch.adaptationSpeed">
+            Adaptation speed - percents per frame, if playing at 30FPS.
+            Default is 0.02 (2% each 1/30s).
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.ContrastStretch.limitMinimum">
+            If our scene is really dark (or really bright), we might not want to
+            stretch its contrast to the full range.
+            limitMinimum=0, limitMaximum=1 is the same as not applying the effect at all.
+            limitMinimum=1, limitMaximum=0 is always stretching colors to full range.
+            The limit on the minimum luminance (0...1) - we won't go above this.
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.ContrastStretch.limitMaximum">
+            The limit on the maximum luminance (0...1) - we won't go below this.
+        </member>
+        <member name="M:UnityStandardAssets.ImageEffects.ContrastStretch.OnRenderImage(UnityEngine.RenderTexture,UnityEngine.RenderTexture)">
+            Apply the filter
+        </member>
+        <member name="M:UnityStandardAssets.ImageEffects.ContrastStretch.CalculateAdaptation(UnityEngine.Texture)">
+            Helper function to do gradual adaptation to min/max luminances
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.ImageEffectBase.shader">
+            Provides a shader property that is set in the inspector
+            and a material instantiated from the shader
+        </member>
+        <member name="T:UnityStandardAssets.ImageEffects.ImageEffects">
+            A Utility class for performing various image based rendering tasks.
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.NoiseAndScratches.monochrome">
+            Monochrome noise just adds grain. Non-monochrome noise
+            more resembles VCR as it adds noise in YUV color space,
+            thus introducing magenta/green colors.
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.NoiseAndScratches.grainSize">
+            The size of the noise grains (1 = one pixel).
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.NoiseAndScratches.scratchFPS">
+            Scratches jump to another locations at this times per second.
+        </member>
+        <member name="F:UnityStandardAssets.ImageEffects.NoiseAndScratches.scratchJitter">
+            While scratches are in the same location, they jitter a bit.
+        </member>
+    </members>
+</doc>
