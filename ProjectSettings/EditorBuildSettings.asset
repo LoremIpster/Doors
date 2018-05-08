@@ -9,5 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 38764733e378f6744ac3f1b7cc8ec905
   - enabled: 1
-    path: Assets/Scenes/Gym.unity
+    path: Assets/Scenes/1_FirstDraftDemo.unity
+    guid: 56186514463bf2e45bd16726f96b2592
+  - enabled: 1
+    path: Assets/Scenes/3_MeetupDemo.unity
+    guid: 4c53f2ce34112e748b0184e66368f3c3
+  - enabled: 0
+    path: Assets/Scenes/GymCode.unity
     guid: f22f4c4c29643eb4996f8de34de6c3dd
+  m_configObjects: {}

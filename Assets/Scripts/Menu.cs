@@ -25,7 +25,12 @@ public class Menu : MonoBehaviour {
 		}
 	}
 
-	public void LoadSceneGym(){
-		SceneManager.LoadScene("Gym", LoadSceneMode.Single);
+	public void LoadSceneGym1(){
+		SceneManager.LoadScene("1_FirstDraftDemo", LoadSceneMode.Single);
 	}
+
+    public void LoadSceneGym2()
+    {
+        SceneManager.LoadScene("3_MeetupDemo", LoadSceneMode.Single);
+    }
 }
