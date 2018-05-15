@@ -769,7 +769,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
@@ -2845,7 +2845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"door","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"player","value":null,"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"door","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1081484554041016}
 --- !u!320 &320054866634331044
@@ -2865,6 +2865,10 @@ PlayableDirector:
   - key: {fileID: 114704429030395150, guid: c7df36707a4d82a4ca3522e54d16ecf0, type: 2}
     value: {fileID: 0}
   - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: 114998513522392610, guid: c7df36707a4d82a4ca3522e54d16ecf0, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114403674236000866, guid: c7df36707a4d82a4ca3522e54d16ecf0, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
