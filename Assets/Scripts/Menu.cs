@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
-
+    /*
 	private bool isMenu;
 
 	void Start(){
@@ -33,4 +33,5 @@ public class Menu : MonoBehaviour {
     {
         SceneManager.LoadScene("3_MeetupDemo", LoadSceneMode.Single);
     }
+    */
 }
