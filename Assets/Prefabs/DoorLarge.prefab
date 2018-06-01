@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 65466362145888898}
   - component: {fileID: 114722305164019042}
   - component: {fileID: 114968062406936198}
+  - component: {fileID: 114627903350339544}
   m_Layer: 0
   m_Name: DoorLarge
   m_TagString: Door
@@ -54,7 +55,7 @@ GameObject:
   - component: {fileID: 4625604932176242}
   - component: {fileID: 65109341921393764}
   m_Layer: 0
-  m_Name: TriggerEnter
+  m_Name: TriggerInside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +145,7 @@ GameObject:
   - component: {fileID: 65168480608687078}
   - component: {fileID: 65199430131192430}
   m_Layer: 0
-  m_Name: TriggerExit
+  m_Name: TriggerOutside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,7 +293,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1059529211423090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: 8, z: -19}
+  m_LocalPosition: {x: -2, y: 0, z: 15.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4625604932176242}
@@ -830,7 +831,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -146.00003, y: -23.900002, z: -4.8990135}
+  m_ConnectedAnchor: {x: -0.8000412, y: 0, z: 15.400986}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2681,13 +2682,27 @@ MonoBehaviour:
   m_Script: {fileID: 305935433, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114722305164019042
+--- !u!114 &114627903350339544
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1059529211423090}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777b41dfbc6a6451aa24a66a5936b5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 95996759628253848}
+  triggerInside: {fileID: 1091131078871430}
+  triggerOutside: {fileID: 1441337065791152}
+--- !u!114 &114722305164019042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1059529211423090}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
   m_Name: 
