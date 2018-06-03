@@ -54,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4625604932176242}
   - component: {fileID: 65109341921393764}
+  - component: {fileID: 114542233631654886}
   m_Layer: 0
   m_Name: TriggerInside
   m_TagString: Untagged
@@ -144,6 +145,7 @@ GameObject:
   - component: {fileID: 65094834754026086}
   - component: {fileID: 65168480608687078}
   - component: {fileID: 65199430131192430}
+  - component: {fileID: 114730943977339956}
   m_Layer: 0
   m_Name: TriggerOutside
   m_TagString: Untagged
@@ -204,6 +206,7 @@ GameObject:
   - component: {fileID: 114516060962017920}
   - component: {fileID: 95996759628253848}
   - component: {fileID: 320503457220431946}
+  - component: {fileID: 114699919636801252}
   m_Layer: 0
   m_Name: DoorMesh
   m_TagString: Door
@@ -2682,6 +2685,18 @@ MonoBehaviour:
   m_Script: {fileID: 305935433, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114542233631654886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091131078871430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114627903350339544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2694,8 +2709,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 95996759628253848}
+  door: {fileID: 0}
   triggerInside: {fileID: 1091131078871430}
   triggerOutside: {fileID: 1441337065791152}
+--- !u!114 &114699919636801252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1623300097294482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d57112838a14fe28cd287b55775875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isVisible: 0
 --- !u!114 &114722305164019042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2711,6 +2739,18 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: 0d17cbb6b2045cc4cac3c540e71aa8af, type: 2}
+--- !u!114 &114730943977339956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1441337065791152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc3ebad2e81b4b32b764b882722ff6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114787390663128172
 MonoBehaviour:
   m_ObjectHideFlags: 1
