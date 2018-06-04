@@ -2709,7 +2709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 95996759628253848}
-  door: {fileID: 0}
+  door: {fileID: 1623300097294482}
   triggerInside: {fileID: 1091131078871430}
   triggerOutside: {fileID: 1441337065791152}
 --- !u!114 &114699919636801252
@@ -2750,7 +2750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc3ebad2e81b4b32b764b882722ff6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInside: 0
+  isOutside: 0
 --- !u!114 &114787390663128172
 MonoBehaviour:
   m_ObjectHideFlags: 1

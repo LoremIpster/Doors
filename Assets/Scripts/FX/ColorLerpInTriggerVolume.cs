@@ -14,7 +14,7 @@ public class ColorLerpInTriggerVolume : MonoBehaviour {
 
     [SerializeField, Header("Lerp Parameters")]
     AnimationCurve m_easyInCurve;
-    [Range(.1f, 5f), SerializeField]
+    [Range(.1f, 30f), SerializeField]
     float m_lerpDuration;
 
     private void Awake()
