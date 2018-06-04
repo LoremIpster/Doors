@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4859192577222898}
   - component: {fileID: 114166793996870650}
-  - component: {fileID: 114097522973329118}
+  - component: {fileID: 114160976798802180}
   m_Layer: 0
   m_Name: Room_3E_XL
   m_TagString: Untagged
@@ -780,6 +780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4428355966768754}
   - component: {fileID: 65898834218379846}
+  - component: {fileID: 114525014061072130}
   m_Layer: 0
   m_Name: InnerVolumeC
   m_TagString: Untagged
@@ -860,7 +861,7 @@ GameObject:
   m_Layer: 0
   m_Name: StairsWide (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1512,6 +1513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4569099540446092}
   - component: {fileID: 65270521579020182}
+  - component: {fileID: 114236651052512452}
   m_Layer: 0
   m_Name: InnerVolumeR
   m_TagString: Untagged
@@ -1528,6 +1530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4284442833846840}
   - component: {fileID: 65222993362318268}
+  - component: {fileID: 114901878722150598}
   m_Layer: 0
   m_Name: OuterVolumeC
   m_TagString: Untagged
@@ -1748,7 +1751,7 @@ GameObject:
   m_Layer: 0
   m_Name: StairsWide (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1779,6 +1782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4640566018634144}
   - component: {fileID: 65677182909923544}
+  - component: {fileID: 114611086191738376}
   m_Layer: 0
   m_Name: InnerVolumeL
   m_TagString: Untagged
@@ -1892,6 +1896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4757803691858918}
   - component: {fileID: 65304615975510062}
+  - component: {fileID: 114152594264056590}
   m_Layer: 0
   m_Name: OuterVolumeL
   m_TagString: Untagged
@@ -2251,6 +2256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4456251516028736}
   - component: {fileID: 65311756125985872}
+  - component: {fileID: 114119099012811032}
   m_Layer: 0
   m_Name: OuterVolumeR
   m_TagString: Untagged
@@ -2415,7 +2421,7 @@ GameObject:
   m_Layer: 0
   m_Name: StairsWide
   m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8628,7 +8634,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 708.201, y: 40, z: -225.39993}
+  m_ConnectedAnchor: {x: 728.701, y: 45, z: -225.39996}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -8730,7 +8736,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 696.99994, y: 40, z: -215.79901}
+  m_ConnectedAnchor: {x: 696.9998, y: 45, z: -195.29898}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -8764,7 +8770,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 687.399, y: 40, z: -227.00003}
+  m_ConnectedAnchor: {x: 666.899, y: 45, z: -227.00003}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -12083,21 +12089,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
---- !u!114 &114097522973329118
+--- !u!114 &114119099012811032
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1032788907605214}
+  m_GameObject: {fileID: 1859821591399300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: bee9bc19b2f8bba41856608ebaa80fc8, type: 2}
+  isInside: 0
 --- !u!114 &114140114842862680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12688,6 +12691,42 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114152594264056590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714454744160832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
+--- !u!114 &114160976798802180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1032788907605214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cbdeb57f05c41528c760c877bb96e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchorL: {fileID: 1675573163648428}
+  anchorC: {fileID: 1390614899156354}
+  anchorR: {fileID: 1405550728368240}
+  innerVolumeL: {fileID: 1691024592996516}
+  innerVolumeC: {fileID: 1306831844588670}
+  innerVolumeR: {fileID: 1550595949382616}
+  outerVolumeL: {fileID: 1714454744160832}
+  outerVolumeC: {fileID: 1555457594050404}
+  outerVolumeR: {fileID: 1859821591399300}
+  room0: {fileID: 1350449304365440, guid: acf11cff91d32114ba883a8091dc61eb, type: 2}
+  room1: {fileID: 1350449304365440, guid: 56e9fabcd15a0d24789e21b3e2858f0e, type: 2}
+  room2: {fileID: 1529955271958168, guid: 2dfa0e72696e1e34a91f8bfd3d791a0a, type: 2}
+  room3: {fileID: 1032788907605214}
 --- !u!114 &114166327214211802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15284,6 +15323,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114236651052512452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1550595949382616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114243625111055768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -30474,6 +30525,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114525014061072130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306831844588670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114550340808516982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -33016,6 +33079,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114611086191738376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691024592996516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114611532213890838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50286,6 +50361,18 @@ MonoBehaviour:
   m_Script: {fileID: 305935433, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114901878722150598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555457594050404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114908303043427970
 MonoBehaviour:
   m_ObjectHideFlags: 1

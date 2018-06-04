@@ -777,8 +777,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4642489703206894}
-  - component: {fileID: 114135968673480742}
-  - component: {fileID: 114225768473169126}
+  - component: {fileID: 114855205394401556}
   m_Layer: 0
   m_Name: RoomStandard
   m_TagString: Untagged
@@ -888,6 +887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4741553433557980}
   - component: {fileID: 65069713756101816}
+  - component: {fileID: 114375375875969382}
   m_Layer: 0
   m_Name: InnerVolumeL
   m_TagString: Untagged
@@ -904,6 +904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4513704446994790}
   - component: {fileID: 65229178420086482}
+  - component: {fileID: 114933657206660954}
   m_Layer: 0
   m_Name: OuterVolumeC
   m_TagString: Untagged
@@ -920,6 +921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4531592511715928}
   - component: {fileID: 65896866005391678}
+  - component: {fileID: 114732730987635714}
   m_Layer: 0
   m_Name: InnerVolumeR
   m_TagString: Untagged
@@ -1167,6 +1169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4795805063866724}
   - component: {fileID: 65953652185342798}
+  - component: {fileID: 114107744730969504}
   m_Layer: 0
   m_Name: InnerVolumeC
   m_TagString: Untagged
@@ -1765,6 +1768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255621356852300}
   - component: {fileID: 65947794730585576}
+  - component: {fileID: 114399675877012446}
   m_Layer: 0
   m_Name: OuterVolumeR
   m_TagString: Untagged
@@ -1910,6 +1914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618427052027832}
   - component: {fileID: 65698964563635092}
+  - component: {fileID: 114718105694965680}
   m_Layer: 0
   m_Name: OuterVolumeL
   m_TagString: Untagged
@@ -3014,8 +3019,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1350449304365440}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 445, y: 40, z: 49.5}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: -310, z: 35.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4757820556077278}
@@ -3028,7 +3033,7 @@ Transform:
   - {fileID: 4585302645180108}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4646458676343984
 Transform:
   m_ObjectHideFlags: 1
@@ -7004,7 +7009,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 475.901, y: 40, z: 60.299942}
+  m_ConnectedAnchor: {x: -30.90099, y: -310, z: 24.700056}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -7038,7 +7043,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 455.401, y: 40, z: 60.30004}
+  m_ConnectedAnchor: {x: -10.40099, y: -310, z: 24.69996}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -7072,7 +7077,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 434.599, y: 40, z: 58.69996}
+  m_ConnectedAnchor: {x: 10.400986, y: -310, z: 26.300041}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -7106,7 +7111,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 444.19995, y: 40, z: 69.900986}
+  m_ConnectedAnchor: {x: 0.80004156, y: -310, z: 15.099014}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -7140,7 +7145,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 414.099, y: 40, z: 58.69996}
+  m_ConnectedAnchor: {x: 30.90099, y: -310, z: 26.300043}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -7174,7 +7179,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 444.19995, y: 40, z: 90.400986}
+  m_ConnectedAnchor: {x: 0.80004156, y: -310, z: -5.4009933}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -7640,7 +7645,7 @@ MeshCollider:
   m_GameObject: {fileID: 1591062971853130}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -11300,10 +11305,8 @@ MonoBehaviour:
     areaError: 15
   dontDestroyMeshOnDelete: 0
   m_selectedFaces: 
-  m_SelectedEdges:
-  - x: 0
-    y: 0
-  m_selectedTriangles: 0000000000000000
+  m_SelectedEdges: []
+  m_selectedTriangles: 
 --- !u!114 &114063820412867218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14004,6 +14007,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114107744730969504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1504868896531302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114132414102745576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14700,31 +14715,6 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
---- !u!114 &114135968673480742
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1350449304365440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"nextRoom","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"OutL","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"OutC","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"OutR","value":{"$content":3,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"InnerVolumeL","value":{"$content":4,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"InnerVolumeC","value":{"$content":5,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"InnerVolumeR","value":{"$content":6,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"OuterVolumeL","value":{"$content":7,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"OuterVolumeC","value":{"$content":8,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"OuterVolumeR","value":{"$content":9,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"colorLerpVolume","value":{"$content":10,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 1350449304365440}
-    - {fileID: 1539727429434680}
-    - {fileID: 1185853079642554}
-    - {fileID: 1147894063449620}
-    - {fileID: 1397207624552644}
-    - {fileID: 1504868896531302}
-    - {fileID: 1414212815572142}
-    - {fileID: 1878365266327622}
-    - {fileID: 1406483314935630}
-    - {fileID: 1812233388632138}
-    - {fileID: 1745619134039498}
 --- !u!114 &114146045481302880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17913,21 +17903,6 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
---- !u!114 &114225768473169126
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1350449304365440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: bee9bc19b2f8bba41856608ebaa80fc8, type: 2}
 --- !u!114 &114231175758039928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24017,6 +23992,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114375375875969382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1397207624552644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114377565164961458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25409,6 +25396,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114399675877012446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1812233388632138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114417124529776462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -31956,6 +31955,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114718105694965680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1878365266327622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114727550184088694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -32195,6 +32206,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114732730987635714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414212815572142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114733107640208434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -34881,6 +34904,30 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114855205394401556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1350449304365440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cbdeb57f05c41528c760c877bb96e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchorL: {fileID: 1539727429434680}
+  anchorC: {fileID: 1185853079642554}
+  anchorR: {fileID: 1147894063449620}
+  innerVolumeL: {fileID: 1397207624552644}
+  innerVolumeC: {fileID: 1504868896531302}
+  innerVolumeR: {fileID: 1414212815572142}
+  outerVolumeL: {fileID: 1878365266327622}
+  outerVolumeC: {fileID: 1406483314935630}
+  outerVolumeR: {fileID: 1812233388632138}
+  room0: {fileID: 1350449304365440}
+  room1: {fileID: 1350449304365440, guid: 56e9fabcd15a0d24789e21b3e2858f0e, type: 2}
+  room2: {fileID: 1529955271958168, guid: 2dfa0e72696e1e34a91f8bfd3d791a0a, type: 2}
+  room3: {fileID: 1032788907605214, guid: 09ac27845d79ff24380397405d25d14b, type: 2}
 --- !u!114 &114875968812579726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -36848,6 +36895,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114933657206660954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1406483314935630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114966082579779332
 MonoBehaviour:
   m_ObjectHideFlags: 1

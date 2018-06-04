@@ -41,7 +41,7 @@ GameObject:
   m_Layer: 0
   m_Name: StraightShort
   m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -56,7 +56,7 @@ GameObject:
   m_Layer: 0
   m_Name: StraightShort
   m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -839,7 +839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4642489703206894}
   - component: {fileID: 114135968673480742}
-  - component: {fileID: 114225768473169126}
+  - component: {fileID: 114587372648752470}
   m_Layer: 0
   m_Name: Room_3E_S
   m_TagString: Untagged
@@ -1093,6 +1093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4741553433557980}
   - component: {fileID: 65069713756101816}
+  - component: {fileID: 114434340705254910}
   m_Layer: 0
   m_Name: InnerVolumeL
   m_TagString: Untagged
@@ -1109,6 +1110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4513704446994790}
   - component: {fileID: 65229178420086482}
+  - component: {fileID: 114930521596573238}
   m_Layer: 0
   m_Name: OuterVolumeC
   m_TagString: Untagged
@@ -1149,6 +1151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4531592511715928}
   - component: {fileID: 65896866005391678}
+  - component: {fileID: 114009643355944660}
   m_Layer: 0
   m_Name: InnerVolumeR
   m_TagString: Untagged
@@ -1261,6 +1264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4795805063866724}
   - component: {fileID: 65953652185342798}
+  - component: {fileID: 114322213692314122}
   m_Layer: 0
   m_Name: InnerVolumeC
   m_TagString: Untagged
@@ -1549,7 +1553,7 @@ GameObject:
   m_Layer: 0
   m_Name: StraightShort
   m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1941,6 +1945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255621356852300}
   - component: {fileID: 65947794730585576}
+  - component: {fileID: 114763073489797778}
   m_Layer: 0
   m_Name: OuterVolumeR
   m_TagString: Untagged
@@ -2145,6 +2150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618427052027832}
   - component: {fileID: 65698964563635092}
+  - component: {fileID: 114800814551424290}
   m_Layer: 0
   m_Name: OuterVolumeL
   m_TagString: Untagged
@@ -3607,7 +3613,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1350449304365440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 537.1, y: 40, z: 49.5}
+  m_LocalPosition: {x: 0, y: -310, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4757820556077278}
@@ -8144,7 +8150,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 547.50104, y: 40, z: 60.30004}
+  m_ConnectedAnchor: {x: 547.501, y: 40, z: 60.30004}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -8178,7 +8184,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 526.69904, y: 40, z: 58.69996}
+  m_ConnectedAnchor: {x: 526.699, y: 40, z: 58.69996}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -8212,7 +8218,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 536.3, y: 40, z: 80.400986}
+  m_ConnectedAnchor: {x: 536.2999, y: 40, z: 80.400986}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -8246,7 +8252,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 557.901, y: 40, z: 60.30004}
+  m_ConnectedAnchor: {x: 558.00104, y: 40, z: 60.30004}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -8314,7 +8320,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 536.3, y: 40, z: 69.900986}
+  m_ConnectedAnchor: {x: 536.2999, y: 40, z: 69.900986}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -9786,6 +9792,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114009643355944660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414212815572142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114024777771757662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18354,21 +18372,6 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
---- !u!114 &114225768473169126
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1350449304365440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: bee9bc19b2f8bba41856608ebaa80fc8, type: 2}
 --- !u!114 &114230676530113534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23635,6 +23638,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114322213692314122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1504868896531302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114328593546745338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28646,6 +28661,18 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: 0d17cbb6b2045cc4cac3c540e71aa8af, type: 2}
+--- !u!114 &114434340705254910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1397207624552644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114450520298680870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -34930,6 +34957,30 @@ MonoBehaviour:
     - {fileID: 95941231798596600}
     - {fileID: 1844796649852120}
     - {fileID: 1839149570284218}
+--- !u!114 &114587372648752470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1350449304365440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cbdeb57f05c41528c760c877bb96e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchorL: {fileID: 1539727429434680}
+  anchorC: {fileID: 1185853079642554}
+  anchorR: {fileID: 1147894063449620}
+  innerVolumeL: {fileID: 1397207624552644}
+  innerVolumeC: {fileID: 1504868896531302}
+  innerVolumeR: {fileID: 1414212815572142}
+  outerVolumeL: {fileID: 1878365266327622}
+  outerVolumeC: {fileID: 1406483314935630}
+  outerVolumeR: {fileID: 1812233388632138}
+  room0: {fileID: 1350449304365440, guid: acf11cff91d32114ba883a8091dc61eb, type: 2}
+  room1: {fileID: 1350449304365440}
+  room2: {fileID: 1529955271958168, guid: 2dfa0e72696e1e34a91f8bfd3d791a0a, type: 2}
+  room3: {fileID: 1032788907605214, guid: 09ac27845d79ff24380397405d25d14b, type: 2}
 --- !u!114 &114587938171861654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -41465,6 +41516,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114763073489797778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1812233388632138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114766292738453286
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -43254,6 +43317,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114800814551424290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1878365266327622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114814686239665272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46760,6 +46835,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114930521596573238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1406483314935630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114944607223802796
 MonoBehaviour:
   m_ObjectHideFlags: 1

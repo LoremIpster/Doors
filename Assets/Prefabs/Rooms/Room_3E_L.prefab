@@ -375,6 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4715964184044744}
   - component: {fileID: 65022180492465820}
+  - component: {fileID: 114358676319076178}
   m_Layer: 0
   m_Name: OuterVolumeR
   m_TagString: Untagged
@@ -625,6 +626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4947270187172362}
   - component: {fileID: 65193228027269400}
+  - component: {fileID: 114283191649928484}
   m_Layer: 0
   m_Name: InnerVolumeC
   m_TagString: Untagged
@@ -1045,6 +1047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4054893457192728}
   - component: {fileID: 65992187245409546}
+  - component: {fileID: 114077137051195450}
   m_Layer: 0
   m_Name: InnerVolumeL
   m_TagString: Untagged
@@ -1767,7 +1770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4418679088504628}
   - component: {fileID: 114539578715674842}
-  - component: {fileID: 114398282258658700}
+  - component: {fileID: 114436425240457918}
   m_Layer: 0
   m_Name: Room_3E_L
   m_TagString: Untagged
@@ -1784,6 +1787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4725963066710646}
   - component: {fileID: 65419365857755082}
+  - component: {fileID: 114671296196895912}
   m_Layer: 0
   m_Name: OuterVolumeC
   m_TagString: Untagged
@@ -2300,6 +2304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4301248217060586}
   - component: {fileID: 65615717435571924}
+  - component: {fileID: 114250412158450342}
   m_Layer: 0
   m_Name: InnerVolumeR
   m_TagString: Untagged
@@ -2811,6 +2816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4398724822979550}
   - component: {fileID: 65076089935222280}
+  - component: {fileID: 114339549017907128}
   m_Layer: 0
   m_Name: OuterVolumeL
   m_TagString: Untagged
@@ -10977,7 +10983,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 615.6, y: 45, z: 90.40099}
+  m_ConnectedAnchor: {x: 626.801, y: 40, z: 60.30004}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -11011,7 +11017,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 626.801, y: 40, z: 60.30004}
+  m_ConnectedAnchor: {x: 647.301, y: 45, z: 60.299942}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -11079,7 +11085,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 615.6, y: 40, z: 69.900986}
+  m_ConnectedAnchor: {x: 615.6, y: 45, z: 90.40099}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -17949,6 +17955,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114077137051195450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1338264319202726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114083236992964268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29638,6 +29656,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114250412158450342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736498168806556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114268904108510730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -33333,6 +33363,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114283191649928484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1182538895242052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114293703106284018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -36821,6 +36863,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114339549017907128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895150055234746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114345125345968880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -38909,6 +38963,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114358676319076178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1109236820338694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114375857219517670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -39844,21 +39910,6 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
---- !u!114 &114398282258658700
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1529955271958168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: bee9bc19b2f8bba41856608ebaa80fc8, type: 2}
 --- !u!114 &114411679835731188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40555,6 +40606,30 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114436425240457918
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1529955271958168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cbdeb57f05c41528c760c877bb96e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchorL: {fileID: 1968443080221652}
+  anchorC: {fileID: 1664877618432708}
+  anchorR: {fileID: 1762191941595848}
+  innerVolumeL: {fileID: 1338264319202726}
+  innerVolumeC: {fileID: 1182538895242052}
+  innerVolumeR: {fileID: 1736498168806556}
+  outerVolumeL: {fileID: 1895150055234746}
+  outerVolumeC: {fileID: 1540001822058750}
+  outerVolumeR: {fileID: 1109236820338694}
+  room0: {fileID: 1350449304365440, guid: acf11cff91d32114ba883a8091dc61eb, type: 2}
+  room1: {fileID: 1350449304365440, guid: 56e9fabcd15a0d24789e21b3e2858f0e, type: 2}
+  room2: {fileID: 1529955271958168}
+  room3: {fileID: 1032788907605214, guid: 09ac27845d79ff24380397405d25d14b, type: 2}
 --- !u!114 &114451265179063674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55597,6 +55672,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114671296196895912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1540001822058750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b438067a989924361882779ef1259d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 0
 --- !u!114 &114671604633404460
 MonoBehaviour:
   m_ObjectHideFlags: 1
