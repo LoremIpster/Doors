@@ -73,11 +73,6 @@ public class RoomGeneration : MonoBehaviour
 
 	void Update ()
     {
-
-        //goingL = innerPositionCheckL.isInside;
-        //goingC = innerPositionCheckC.isInside;
-        //goingR = innerPositionCheckR.isInside;
-
         if(!spawningDone)
         {
             if (innerPositionCheckL.isInside)
