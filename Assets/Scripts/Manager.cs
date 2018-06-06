@@ -37,6 +37,7 @@ public class Manager : MonoBehaviour
     [Space]
 
     [Header("Part Two")]
+    public GameObject doorDeadEnd;
     public GameObject triggerDeadEnd;
     public GameObject triggerColor;
     public GameObject floorStart;
@@ -91,7 +92,7 @@ public class Manager : MonoBehaviour
     {
         timeMoving = playerScript.timeMoving;
 
-        if(timeMoving > 10)
+        if(timeMoving > 5)
         {
             nextLevel = true;    
         }
@@ -99,10 +100,12 @@ public class Manager : MonoBehaviour
 
     void Beat1()
     {
-        gazeOk = gazeScript.isVisible;
-        positionOk = positionScript.isInside;
+        gazeScript = wallStart.GetComponent<GazeCheck>();
+        positionScript = wallStart.GetComponent<PositionCheck>();
 
-        if(gazeOk && positionOk){
+        print(gazeScript.isVisible);
+
+        if(gazeScript.isVisible && positionScript.isInside){
             door.SetActive(true);
             doorCover.SetActive(false);
             nextLevel = true;
@@ -112,10 +115,12 @@ public class Manager : MonoBehaviour
 
     void Beat2()
     {
-        inDeadEnd = deadEndScript.isInside;
-        if (inDeadEnd)
+        gazeScript = doorDeadEnd.GetComponent<GazeCheck>();
+        positionScript = doorDeadEnd.GetComponent<PositionCheck>();
+
+        if (deadEndScript.isInside)
         {
-            if (gazeOk && positionOk)
+            if (gazeScript.isVisible && positionScript.isInside)
             {
                 floorScript.enabled = true;
                 triggerColor.SetActive(true);

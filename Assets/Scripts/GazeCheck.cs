@@ -9,13 +9,11 @@ public class GazeCheck : MonoBehaviour {
 
     private void OnBecameVisible()
     {
-        //print("VISIBLE");
         isVisible = true;
     }
 
     private void OnBecameInvisible()
     {
-        //print("INVISIBLE");
         isVisible = false;
     }
 }

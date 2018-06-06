@@ -50,10 +50,10 @@ public class RoomGeneration : MonoBehaviour
 
 	void Start ()
     {
-        //room0 = Resources.Load("Prefabs/Rooms/RoomStandard") as GameObject;
-        //room1 = Resources.Load("Prefabs/Rooms/Room_3E_S") as GameObject;
-        //room2 = Resources.Load("Prefabs/Rooms/Room_3E_L") as GameObject;
-        //room3 = Resources.Load("Prefabs/Rooms/Room_3E_XL") as GameObject;
+        room0 = Resources.Load("Prefabs/Rooms/RoomStandard") as GameObject;
+        room1 = Resources.Load("Prefabs/Rooms/Room_3E_S") as GameObject;
+        room2 = Resources.Load("Prefabs/Rooms/Room_3E_L") as GameObject;
+        room3 = Resources.Load("Prefabs/Rooms/Room_3E_XL") as GameObject;
 
         spawningDone = false;
         nextRoom = room0;
@@ -103,7 +103,7 @@ public class RoomGeneration : MonoBehaviour
     void CheckRoomNumber()
     {
         managerScript.roomNumber++;
-        print(managerScript.roomNumber);
+        //print(managerScript.roomNumber);
         switch (managerScript.roomNumber)
         {
             case 0:
