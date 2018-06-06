@@ -23,43 +23,51 @@ public class RoomGeneration : MonoBehaviour
 
     [Space]
 
-    public GameObject room0;
-    public GameObject room1;
-    public GameObject room2;
-    public GameObject room3;
+    private GameObject room0, room1, room2, room3, room4, room5, room6, room7, room8;
+    private GameObject dock;
 
-    private int roomNumber;
     private bool spawningDone;
+    private bool walkthroughComplete;
     private GameObject nextRoom;
 
-    private bool goingL;
-    private bool goingC;
-    private bool goingR;
+    private bool goingL, goingC, goingR;
 
-    private PositionCheck innerPositionCheckL;
-    private PositionCheck outerPositionCheckL;
+    private PositionCheck innerPositionCheckL, outerPositionCheckL;
 
-    private PositionCheck innerPositionCheckC;
-    private PositionCheck outerPositionCheckC;
+    private PositionCheck innerPositionCheckC, outerPositionCheckC;
 
-    private PositionCheck innerPositionCheckR;
-    private PositionCheck outerPositionCheckR;
+    private PositionCheck innerPositionCheckR, outerPositionCheckR;
 
-    private GameObject manager;
+    private GameObject managerGO;
     private Manager managerScript;
 
 	void Start ()
     {
-        room0 = Resources.Load("Prefabs/Rooms/RoomStandard") as GameObject;
-        room1 = Resources.Load("Prefabs/Rooms/Room_3E_S") as GameObject;
-        room2 = Resources.Load("Prefabs/Rooms/Room_3E_L") as GameObject;
-        room3 = Resources.Load("Prefabs/Rooms/Room_3E_XL") as GameObject;
+        dock = GameObject.Find("Dock");
+
+        // TO BE TURNED INTO AN ARRAY
+        room0 = GameObject.Find("Start");
+        room1 = GameObject.Find("World");
+        room2 = GameObject.Find("RoomLost1");
+        room3 = GameObject.Find("RoomLost2");
+        room4 = GameObject.Find("RoomLost3");
+        room5 = GameObject.Find("RoomLost4");
+        room6 = GameObject.Find("RoomRepeat");
+        room7 = GameObject.Find("Stairway");
+
+        room1.transform.position = dock.transform.position;
+        room2.transform.position = dock.transform.position;
+        room3.transform.position = dock.transform.position;
+        room4.transform.position = dock.transform.position;
+        room5.transform.position = dock.transform.position;
+        room6.transform.position = dock.transform.position;
+        room7.transform.position = dock.transform.position;
 
         spawningDone = false;
         nextRoom = room0;
 
-        manager =  GameObject.Find("Manager");
-        managerScript = manager.GetComponent<Manager>();
+        managerGO =  GameObject.Find("Manager");
+        managerScript = managerGO.GetComponent<Manager>();
 
         innerPositionCheckL = innerVolumeL.GetComponent<PositionCheck>();
         outerPositionCheckL = outerVolumeL.GetComponent<PositionCheck>();
@@ -77,33 +85,39 @@ public class RoomGeneration : MonoBehaviour
         {
             if (innerPositionCheckL.isInside)
             {
-                SpawnNewRoom(anchorL);
+                ActivateRoom(anchorL);
             }
             else if (innerPositionCheckC.isInside)
             {
-                SpawnNewRoom(anchorC);
+                ActivateRoom(anchorC);
             }
             else if (innerPositionCheckR.isInside)
             {
-                SpawnNewRoom(anchorR);
+                ActivateRoom(anchorR);
             }
         }else if (outerPositionCheckL.isInside || outerPositionCheckC.isInside || outerPositionCheckR.isInside)
         {
-            UnSpawnRoom();
+            DeactivateRoom();
         }
 	}
 
-    void SpawnNewRoom(GameObject anchor)
+    void ActivateRoom(GameObject anchor)
     {
         CheckRoomNumber();
-        Instantiate(nextRoom, anchor.transform.position, anchor.transform.rotation);
+        nextRoom.SetActive(true);
+        nextRoom.transform.position = anchor.transform.position;
+        nextRoom.transform.rotation = anchor.transform.rotation;
         spawningDone = true;
+        if (walkthroughComplete)
+        {
+            managerScript.roomNumber = 0;
+            walkthroughComplete = false;
+        }
     }
 
     void CheckRoomNumber()
     {
         managerScript.roomNumber++;
-        //print(managerScript.roomNumber);
         switch (managerScript.roomNumber)
         {
             case 0:
@@ -119,13 +133,23 @@ public class RoomGeneration : MonoBehaviour
                 nextRoom = room3;
                 break;
             case 4:
-                managerScript.roomNumber = 0;
+                nextRoom = room4;
+                break;
+            case 5:
+                nextRoom = room5;
+                break;
+            case 6:
+                nextRoom = room6;
+                break;
+            case 7:
+                nextRoom = room7;
+                walkthroughComplete = true;
                 break;
         }
     }
 
-    void UnSpawnRoom()
+    void DeactivateRoom()
     {
-        gameObject.SetActive(false);
+        gameObject.transform.position = dock.transform.position;
     }
 }

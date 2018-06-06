@@ -32,15 +32,16 @@ public class Manager : MonoBehaviour
 
     [Header("Part One")]
     public GameObject wallStart;
+    public GameObject triggerStart;
     public GameObject doorCover;
     public GameObject door;
     [Space]
 
     [Header("Part Two")]
     public GameObject doorDeadEnd;
+    public GameObject triggerDoor;
     public GameObject triggerDeadEnd;
     public GameObject triggerColor;
-    public GameObject floorStart;
 
     private FloorDisable floorScript;
     private PositionCheck deadEndScript;
@@ -52,7 +53,6 @@ public class Manager : MonoBehaviour
         playerScript = pawn.GetComponent<PlayerData>();
         gazeScript = wallStart.GetComponent<GazeCheck>();
         positionScript = wallStart.GetComponent<PositionCheck>();
-        floorScript = floorStart.GetComponent<FloorDisable>();
         deadEndScript = triggerDeadEnd.GetComponent<PositionCheck>();
     }
 
@@ -94,18 +94,16 @@ public class Manager : MonoBehaviour
 
         if(timeMoving > 5)
         {
-            nextLevel = true;    
+            nextLevel = true;
         }
     }
 
     void Beat1()
     {
         gazeScript = wallStart.GetComponent<GazeCheck>();
-        positionScript = wallStart.GetComponent<PositionCheck>();
+        positionScript = triggerStart.GetComponent<PositionCheck>();
 
-        print(gazeScript.isVisible);
-
-        if(gazeScript.isVisible && positionScript.isInside){
+        if(!gazeScript.isVisible && positionScript.isInside){
             door.SetActive(true);
             doorCover.SetActive(false);
             nextLevel = true;
@@ -116,13 +114,12 @@ public class Manager : MonoBehaviour
     void Beat2()
     {
         gazeScript = doorDeadEnd.GetComponent<GazeCheck>();
-        positionScript = doorDeadEnd.GetComponent<PositionCheck>();
+        positionScript = triggerDeadEnd.GetComponent<PositionCheck>();
 
         if (deadEndScript.isInside)
         {
             if (gazeScript.isVisible && positionScript.isInside)
             {
-                floorScript.enabled = true;
                 triggerColor.SetActive(true);
 
                 GameObject[] deletedGOs;
