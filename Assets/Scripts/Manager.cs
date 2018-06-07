@@ -90,6 +90,9 @@ public class Manager : MonoBehaviour
 
     void Beat0()
     {
+        if (PlayerSingleton.s_player.m_loadedOnce)
+            nextLevel = true;
+
         timeMoving = playerScript.timeMoving;
 
         if(timeMoving > 5)
