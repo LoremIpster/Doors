@@ -113,7 +113,7 @@ public class Manager : MonoBehaviour
     void Beat2()
     {
         gazeScript = doorDeadEnd.GetComponent<GazeCheck>();
-        positionScript = triggerDeadEnd.GetComponent<PositionCheck>();
+        positionScript = triggerDoor.GetComponent<PositionCheck>();
 
         if (deadEndScript.isInside)
         {
