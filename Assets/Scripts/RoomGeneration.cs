@@ -104,6 +104,7 @@ public class RoomGeneration : MonoBehaviour
 
     void ActivateRoom(GameObject anchor)
     {
+        print(walkthroughComplete);
         if (walkthroughComplete)
         {
             ResetWalkthrough();
@@ -144,15 +145,18 @@ public class RoomGeneration : MonoBehaviour
                 break;
             case 7:
                 nextRoom = room7;
-                walkthroughComplete = true;
+                ResetWalkthrough();
+                //walkthroughComplete = true;
                 break;
         }
     }
 
     void ResetWalkthrough()
     {
+        print("RESET CALISSE");
         managerScript.roomNumber = 0;
-        walkthroughComplete = false;       
+        managerScript.beat = 0;
+        //walkthroughComplete = false;       
     }
 
     void DeactivateRoom()
