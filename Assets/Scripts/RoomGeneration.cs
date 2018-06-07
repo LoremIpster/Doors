@@ -55,6 +55,7 @@ public class RoomGeneration : MonoBehaviour
         room6 = GameObject.Find("RoomRepeat");
         room7 = GameObject.Find("Stairway");
 
+        // ARRAAAAAAY
         room1.transform.position = dock.transform.position;
         room2.transform.position = dock.transform.position;
         room3.transform.position = dock.transform.position;
@@ -103,16 +104,16 @@ public class RoomGeneration : MonoBehaviour
 
     void ActivateRoom(GameObject anchor)
     {
+        if (walkthroughComplete)
+        {
+            ResetWalkthrough();
+        }
+
         CheckRoomNumber();
         nextRoom.SetActive(true);
         nextRoom.transform.position = anchor.transform.position;
         nextRoom.transform.rotation = anchor.transform.rotation;
         spawningDone = true;
-        if (walkthroughComplete)
-        {
-            managerScript.roomNumber = 0;
-            walkthroughComplete = false;
-        }
     }
 
     void CheckRoomNumber()
@@ -146,6 +147,12 @@ public class RoomGeneration : MonoBehaviour
                 walkthroughComplete = true;
                 break;
         }
+    }
+
+    void ResetWalkthrough()
+    {
+        managerScript.roomNumber = 0;
+        walkthroughComplete = false;       
     }
 
     void DeactivateRoom()
