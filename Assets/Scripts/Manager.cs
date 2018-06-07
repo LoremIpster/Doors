@@ -117,7 +117,7 @@ public class Manager : MonoBehaviour
 
         if (deadEndScript.isInside)
         {
-            if (!gazeScript.isVisible && positionScript.isInside)
+            if (gazeScript.isVisible && positionScript.isInside)
             {
                 LayoutSwitch();
             }
