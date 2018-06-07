@@ -117,18 +117,36 @@ public class Manager : MonoBehaviour
 
         if (deadEndScript.isInside)
         {
-            if (gazeScript.isVisible && positionScript.isInside)
+            if (!gazeScript.isVisible && positionScript.isInside)
             {
-                triggerColor.SetActive(true);
-
-                GameObject[] deletedGOs;
-                deletedGOs = GameObject.FindGameObjectsWithTag("LayoutSwitch");
-
-                foreach (GameObject deletedGO in deletedGOs)
-                {
-                    deletedGO.SetActive(false);
-                }
+                LayoutSwitch();
             }
+        }
+    }
+
+    void LayoutSwitch()
+    {
+        triggerColor.SetActive(true);
+
+        GameObject[] deletedGOs;
+        deletedGOs = GameObject.FindGameObjectsWithTag("LayoutSwitch");
+
+        foreach (GameObject deletedGO in deletedGOs)
+        {
+            deletedGO.SetActive(false);
+        }
+    }
+
+    void RevertLayoutSwitch()
+    {
+        triggerColor.SetActive(false);
+
+        GameObject[] deletedGOs;
+        deletedGOs = GameObject.FindGameObjectsWithTag("LayoutSwitch");
+
+        foreach (GameObject deletedGO in deletedGOs)
+        {
+            deletedGO.SetActive(true);
         }
     }
 }
