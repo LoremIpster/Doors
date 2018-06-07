@@ -114,16 +114,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 317.69
+    value: 14
   sampleCount:
     overrideState: 1
-    value: 17
+    value: 13
 --- !u!114 &114777593749679230
 MonoBehaviour:
   m_ObjectHideFlags: 3

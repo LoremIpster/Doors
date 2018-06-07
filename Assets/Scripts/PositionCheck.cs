@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PositionCheck : MonoBehaviour {
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool isInside;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {

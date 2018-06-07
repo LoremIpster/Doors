@@ -102,8 +102,7 @@ public class Manager : MonoBehaviour
     {
         gazeScript = wallStart.GetComponent<GazeCheck>();
         positionScript = triggerStart.GetComponent<PositionCheck>();
-
-        if(!gazeScript.isVisible && positionScript.isInside){
+        if(gazeScript.isVisible && positionScript.isInside){
             door.SetActive(true);
             doorCover.SetActive(false);
             nextLevel = true;

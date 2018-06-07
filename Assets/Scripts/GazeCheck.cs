@@ -7,6 +7,7 @@ public class GazeCheck : MonoBehaviour {
     [HideInInspector]
     public bool isVisible;
 
+
     private void OnBecameVisible()
     {
         isVisible = true;
