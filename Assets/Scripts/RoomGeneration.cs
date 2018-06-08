@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RoomGeneration : MonoBehaviour
 {
-
     public GameObject anchorL;
     public GameObject anchorC;
     public GameObject anchorR;

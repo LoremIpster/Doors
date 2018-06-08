@@ -46,7 +46,7 @@ public class EdgeFading : MonoBehaviour
         while (elapsed <= m_lerpDuration)
         {
             float step = m_easyInCurve.Evaluate(elapsed / m_lerpDuration);
-            edgeDetection.edgesColor = Color.Lerp(initialColor, edgeDetection.edgesOnlyBgColor, step);
+            edgeDetection.edgesColor = Color.Lerp(initialColor, Color.white, step);
             elapsed += Time.deltaTime;
             yield return null;
         }
