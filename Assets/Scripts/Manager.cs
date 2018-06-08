@@ -11,8 +11,6 @@ public class Manager : MonoBehaviour
     private GazeCheck gazeScript;
     private PositionCheck positionScript;
 
-    [Space]
-
     [HideInInspector]
     public int beat;
 
@@ -28,24 +26,56 @@ public class Manager : MonoBehaviour
     [HideInInspector]
     public int roomNumber;
 
+    [Header("Sound")]
+    private bool clipPlaying;
+    public AudioSource soundscapeFront;
+    public AudioSource soundscapeBack;
+    public AudioSource music;
+    public AudioSource sfx;
+
     [Space]
 
-    [Header("Part One")]
+    public AudioClip metro;
+    public AudioClip sea;
+    public AudioClip forest;
+    public AudioClip rain;
+    public AudioClip road;
+    public AudioClip reverb;
+    public AudioClip water;
+    public AudioClip chaos;
+    public AudioClip song;
+    public AudioClip clocks;
+    public AudioClip ringer;
+
+    [Space]
+
+    [Header("Beat 1")]
     public GameObject wallStart;
     public GameObject triggerStart;
     public GameObject doorCover;
     public GameObject door;
+
     [Space]
 
-    [Header("Part Two")]
+    [Header("Beat 2")]
     public GameObject doorDeadEnd;
     public GameObject triggerDoor;
     public GameObject triggerDeadEnd;
     public GameObject triggerColor;
 
-    private FloorDisable floorScript;
     private PositionCheck deadEndScript;
     private bool inDeadEnd;
+
+    [Space]
+
+    [Header("Beat 3")]
+    public GameObject triggerClocks;
+    public GameObject triggerRinger;
+
+    [Space]
+
+    [Header("Beat 4")]
+    public GameObject triggerMusic;
 
     void Start()
     {
@@ -88,10 +118,10 @@ public class Manager : MonoBehaviour
 
     }
 
+    // Intro
     void Beat0()
     {
-        if (PlayerSingleton.s_player.m_loadedOnce)
-            nextLevel = true;
+        playClip(metro);
 
         timeMoving = playerScript.timeMoving;
 
@@ -101,29 +131,69 @@ public class Manager : MonoBehaviour
         }
     }
 
+    // Line
     void Beat1()
     {
         gazeScript = wallStart.GetComponent<GazeCheck>();
         positionScript = triggerStart.GetComponent<PositionCheck>();
-        if(gazeScript.isVisible && positionScript.isInside){
+
+        RevertLayoutSwitch();
+
+        if(!gazeScript.isVisible && positionScript.isInside){
             door.SetActive(true);
             doorCover.SetActive(false);
             nextLevel = true;
         }
     }
 
-
+    // Backtrack
     void Beat2()
     {
+        clipPlaying = false;
+        soundscapeBack.clip = reverb;
+        soundscapeBack.Play();
+
         gazeScript = doorDeadEnd.GetComponent<GazeCheck>();
-        positionScript = triggerDoor.GetComponent<PositionCheck>();
+        positionScript = triggerDeadEnd.GetComponent<PositionCheck>();
 
         if (deadEndScript.isInside)
         {
-            if (gazeScript.isVisible && positionScript.isInside)
+            if (!gazeScript.isVisible && positionScript.isInside)
             {
                 LayoutSwitch();
+                nextLevel = true;
             }
+        }
+    }
+
+    // Lost
+    void Beat3()
+    {
+        print("beat3");
+        //positionScript = triggerClocks.GetComponent<PositionCheck>();
+        if(positionScript.GetComponent<PositionCheck>().isInside)
+        {
+            sfx.clip = clocks;
+            sfx.Play();
+        }
+
+        //positionScript = triggerRinger.GetComponent<PositionCheck>();
+        else if(positionScript.GetComponent<PositionCheck>().isInside)
+        {
+            sfx.clip = ringer;
+            sfx.Play();
+        }
+    }
+
+    // Stairway
+    void Beat4()
+    {
+        print("beat4");
+        //positionScript = triggerMusic.GetComponent<PositionCheck>();
+        if (positionScript.GetComponent<PositionCheck>().isInside)
+        {
+            music.clip = song;
+            music.Play();
         }
     }
 
@@ -150,6 +220,17 @@ public class Manager : MonoBehaviour
         foreach (GameObject deletedGO in deletedGOs)
         {
             deletedGO.SetActive(true);
+        }
+    }
+
+    void PlayClip(AudioClip c)
+    {
+        if(!clipPlaying)
+        {
+            sfx.clip = clocks;
+            sfx.Play();
+
+            clipPlaying = true;
         }
     }
 }

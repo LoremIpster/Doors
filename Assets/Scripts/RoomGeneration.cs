@@ -23,7 +23,7 @@ public class RoomGeneration : MonoBehaviour
 
     [Space]
 
-    private GameObject room0, room1, room2, room3, room4, room5, room6, room7, room8;
+    private GameObject room0, room1, room2, room3, room4, room5, room6, room7, room8, room9;
     private GameObject dock;
 
     private bool spawningDone;
@@ -48,12 +48,13 @@ public class RoomGeneration : MonoBehaviour
         // TO BE TURNED INTO AN ARRAY
         room0 = GameObject.Find("Start");
         room1 = GameObject.Find("World");
-        room2 = GameObject.Find("RoomLost1");
-        room3 = GameObject.Find("RoomLost2");
-        room4 = GameObject.Find("RoomLost3");
-        room5 = GameObject.Find("RoomLost4");
-        room6 = GameObject.Find("RoomRepeat");
-        room7 = GameObject.Find("Stairway");
+        room2 = GameObject.Find("RoomLost4");
+        room3 = GameObject.Find("RoomLost3");
+        room4 = GameObject.Find("RoomLost2");
+        room5 = GameObject.Find("RoomLost1");
+        room6 = GameObject.Find("RoomLost5");
+        room7 = GameObject.Find("RoomRepeat");
+        room8 = GameObject.Find("Stairway");
 
         // ARRAAAAAAY
         room1.transform.position = dock.transform.position;
@@ -63,6 +64,7 @@ public class RoomGeneration : MonoBehaviour
         room5.transform.position = dock.transform.position;
         room6.transform.position = dock.transform.position;
         room7.transform.position = dock.transform.position;
+        room8.transform.position = dock.transform.position;
 
         spawningDone = false;
         nextRoom = room0;
@@ -104,7 +106,6 @@ public class RoomGeneration : MonoBehaviour
 
     void ActivateRoom(GameObject anchor)
     {
-        print(walkthroughComplete);
         if (walkthroughComplete)
         {
             ResetWalkthrough();
@@ -145,18 +146,18 @@ public class RoomGeneration : MonoBehaviour
                 break;
             case 7:
                 nextRoom = room7;
+                break;
+            case 8:
+                nextRoom = room8;
                 ResetWalkthrough();
-                //walkthroughComplete = true;
                 break;
         }
     }
 
     void ResetWalkthrough()
     {
-        print("RESET CALISSE");
-        managerScript.roomNumber = 0;
+        managerScript.roomNumber = -1;
         managerScript.beat = 0;
-        //walkthroughComplete = false;       
     }
 
     void DeactivateRoom()
