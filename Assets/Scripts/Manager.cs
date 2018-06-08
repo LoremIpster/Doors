@@ -121,7 +121,7 @@ public class Manager : MonoBehaviour
     // Intro
     void Beat0()
     {
-        playClip(metro);
+        PlayClip(metro);
 
         timeMoving = playerScript.timeMoving;
 
@@ -227,7 +227,7 @@ public class Manager : MonoBehaviour
     {
         if(!clipPlaying)
         {
-            sfx.clip = clocks;
+            sfx.clip = c;
             sfx.Play();
 
             clipPlaying = true;
