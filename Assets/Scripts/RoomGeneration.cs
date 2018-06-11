@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RoomGeneration : MonoBehaviour
 {
+    public GameObject BackCover;
     public GameObject anchorL;
     public GameObject anchorC;
     public GameObject anchorR;
@@ -40,7 +41,7 @@ public class RoomGeneration : MonoBehaviour
     private GameObject managerGO;
     private Manager managerScript;
 
-	void Start ()
+    void Start()
     {
         dock = GameObject.Find("Dock");
 
@@ -68,7 +69,7 @@ public class RoomGeneration : MonoBehaviour
         spawningDone = false;
         nextRoom = room0;
 
-        managerGO =  GameObject.Find("Manager");
+        managerGO = GameObject.Find("Manager");
         managerScript = managerGO.GetComponent<Manager>();
 
         innerPositionCheckL = innerVolumeL.GetComponent<PositionCheck>();
@@ -79,11 +80,11 @@ public class RoomGeneration : MonoBehaviour
 
         innerPositionCheckR = innerVolumeR.GetComponent<PositionCheck>();
         outerPositionCheckR = outerVolumeR.GetComponent<PositionCheck>();
-	}
+    }
 
-	void Update ()
+    void Update()
     {
-        if(!spawningDone)
+        if (!spawningDone)
         {
             if (innerPositionCheckL.isInside)
             {
@@ -97,11 +98,14 @@ public class RoomGeneration : MonoBehaviour
             {
                 ActivateRoom(anchorR);
             }
-        }else if (outerPositionCheckL.isInside || outerPositionCheckC.isInside || outerPositionCheckR.isInside)
+        }
+        else if (outerPositionCheckL.isInside || outerPositionCheckC.isInside || outerPositionCheckR.isInside)
         {
             DeactivateRoom();
+            if (BackCover != null)
+                BackCover.SetActive(true);
         }
-	}
+    }
 
     void ActivateRoom(GameObject anchor)
     {

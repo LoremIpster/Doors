@@ -26,27 +26,6 @@ public class Manager : MonoBehaviour
     [HideInInspector]
     public int roomNumber;
 
-    [Header("Sound")]
-    private bool clipPlaying;
-    public AudioSource soundscapeFront;
-    public AudioSource soundscapeBack;
-    public AudioSource music;
-    public AudioSource sfx;
-
-    [Space]
-
-    public AudioClip metro;
-    public AudioClip sea;
-    public AudioClip forest;
-    public AudioClip rain;
-    public AudioClip road;
-    public AudioClip reverb;
-    public AudioClip water;
-    public AudioClip chaos;
-    public AudioClip song;
-    public AudioClip clocks;
-    public AudioClip ringer;
-
     [Space]
 
     [Header("Beat 1")]
@@ -118,11 +97,11 @@ public class Manager : MonoBehaviour
 
     }
 
+    
+
     // Intro
     void Beat0()
     {
-        PlayClip(metro);
-
         timeMoving = playerScript.timeMoving;
 
         if(timeMoving > 5)
@@ -149,9 +128,6 @@ public class Manager : MonoBehaviour
     // Backtrack
     void Beat2()
     {
-        clipPlaying = false;
-        soundscapeBack.clip = reverb;
-        soundscapeBack.Play();
 
         gazeScript = doorDeadEnd.GetComponent<GazeCheck>();
         positionScript = triggerDeadEnd.GetComponent<PositionCheck>();
@@ -169,32 +145,11 @@ public class Manager : MonoBehaviour
     // Lost
     void Beat3()
     {
-        print("beat3");
-        //positionScript = triggerClocks.GetComponent<PositionCheck>();
-        if(positionScript.GetComponent<PositionCheck>().isInside)
-        {
-            sfx.clip = clocks;
-            sfx.Play();
-        }
-
-        //positionScript = triggerRinger.GetComponent<PositionCheck>();
-        else if(positionScript.GetComponent<PositionCheck>().isInside)
-        {
-            sfx.clip = ringer;
-            sfx.Play();
-        }
     }
 
     // Stairway
     void Beat4()
     {
-        print("beat4");
-        //positionScript = triggerMusic.GetComponent<PositionCheck>();
-        if (positionScript.GetComponent<PositionCheck>().isInside)
-        {
-            music.clip = song;
-            music.Play();
-        }
     }
 
     void LayoutSwitch()
@@ -223,14 +178,4 @@ public class Manager : MonoBehaviour
         }
     }
 
-    void PlayClip(AudioClip c)
-    {
-        if(!clipPlaying)
-        {
-            sfx.clip = c;
-            sfx.Play();
-
-            clipPlaying = true;
-        }
-    }
 }
