@@ -23,8 +23,6 @@ public class RoomGeneration : MonoBehaviour
 
     [Space]
 
-    private GameObject room0, room1, room2, room3, room4, room5, room6, room7, room8, room9;
-    private GameObject dock;
 
     private bool spawningDone;
     private bool walkthroughComplete;
@@ -43,31 +41,8 @@ public class RoomGeneration : MonoBehaviour
 
     void Start()
     {
-        dock = GameObject.Find("Dock");
-
-        // TO BE TURNED INTO AN ARRAY
-        room0 = GameObject.Find("Start");
-        room1 = GameObject.Find("World");
-        room2 = GameObject.Find("RoomLost4");
-        room3 = GameObject.Find("RoomLost3");
-        room4 = GameObject.Find("RoomLost2");
-        room5 = GameObject.Find("RoomLost1");
-        room6 = GameObject.Find("RoomLost5");
-        room7 = GameObject.Find("RoomRepeat");
-        room8 = GameObject.Find("Stairway");
-
-        // ARRAAAAAAY
-        room1.transform.position = dock.transform.position;
-        room2.transform.position = dock.transform.position;
-        room3.transform.position = dock.transform.position;
-        room4.transform.position = dock.transform.position;
-        room5.transform.position = dock.transform.position;
-        room6.transform.position = dock.transform.position;
-        room7.transform.position = dock.transform.position;
-        room8.transform.position = dock.transform.position;
-
         spawningDone = false;
-        nextRoom = room0;
+        nextRoom = LevelReferences.s_references.room0;
 
         managerGO = GameObject.Find("Manager");
         managerScript = managerGO.GetComponent<Manager>();
@@ -127,31 +102,31 @@ public class RoomGeneration : MonoBehaviour
         switch (managerScript.roomNumber)
         {
             case 0:
-                nextRoom = room0;
+                nextRoom = LevelReferences.s_references.room0;
                 break;
             case 1:
-                nextRoom = room1;
+                nextRoom = LevelReferences.s_references.room1;
                 break;
             case 2:
-                nextRoom = room2;
+                nextRoom = LevelReferences.s_references.room2;
                 break;
             case 3:
-                nextRoom = room3;
+                nextRoom = LevelReferences.s_references.room3;
                 break;
             case 4:
-                nextRoom = room4;
+                nextRoom = LevelReferences.s_references.room4;
                 break;
             case 5:
-                nextRoom = room5;
+                nextRoom = LevelReferences.s_references.room5;
                 break;
             case 6:
-                nextRoom = room6;
+                nextRoom = LevelReferences.s_references.room6;
                 break;
             case 7:
-                nextRoom = room7;
+                nextRoom = LevelReferences.s_references.room7;
                 break;
             case 8:
-                nextRoom = room8;
+                nextRoom = LevelReferences.s_references.room8;
                 ResetWalkthrough();
                 break;
         }
@@ -165,6 +140,6 @@ public class RoomGeneration : MonoBehaviour
 
     void DeactivateRoom()
     {
-        gameObject.transform.position = dock.transform.position;
+        gameObject.transform.position = LevelReferences.s_references.dock.transform.position;
     }
 }
