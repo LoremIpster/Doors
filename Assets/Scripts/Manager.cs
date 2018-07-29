@@ -10,6 +10,8 @@ public class Manager : MonoBehaviour
     private PlayerData playerScript;
     private GazeCheck gazeScript;
     private PositionCheck positionScript;
+    private PositionCheck stairwayPositionScript;
+
 
     [HideInInspector]
     public int beat;
@@ -32,7 +34,7 @@ public class Manager : MonoBehaviour
     public GameObject wallStart;
     public GameObject triggerStart;
     public GameObject doorCover;
-    public GameObject door;
+    public GameObject doorStart;
 
     [Space]
 
@@ -55,6 +57,13 @@ public class Manager : MonoBehaviour
 
     [Header("Beat 4")]
     public GameObject triggerMusic;
+    public GameObject triggerEnding;
+    public GameObject gazeObject;
+    public GameObject textEnding;
+    public GameObject collisionFront;
+    public GameObject collisionBack;
+    public GameObject finalStaircaseFirstHalf;
+    public GameObject finalStaircaseSecondHalf;
 
     void Start()
     {
@@ -63,6 +72,9 @@ public class Manager : MonoBehaviour
         gazeScript = wallStart.GetComponent<GazeCheck>();
         positionScript = wallStart.GetComponent<PositionCheck>();
         deadEndScript = triggerDeadEnd.GetComponent<PositionCheck>();
+        deadEndScript = triggerDeadEnd.GetComponent<PositionCheck>();
+        stairwayPositionScript = triggerEnding.GetComponent<PositionCheck>();
+
     }
 
     void Update()
@@ -83,6 +95,9 @@ public class Manager : MonoBehaviour
                 break;
             case 2:
                 Beat2();
+                break;
+            case 3:
+                Beat3();
                 break;
         }
     }
@@ -118,8 +133,8 @@ public class Manager : MonoBehaviour
 
         RevertLayoutSwitch();
 
-        if(!gazeScript.isVisible && positionScript.isInside){
-            door.SetActive(true);
+        if(gazeScript.isVisible && positionScript.isInside){
+            doorStart.SetActive(true);
             doorCover.SetActive(false);
             nextLevel = true;
         }
@@ -128,28 +143,42 @@ public class Manager : MonoBehaviour
     // Backtrack
     void Beat2()
     {
-
         gazeScript = doorDeadEnd.GetComponent<GazeCheck>();
-        positionScript = triggerDeadEnd.GetComponent<PositionCheck>();
+        positionScript = triggerDoor.GetComponent<PositionCheck>();
 
-        if (deadEndScript.isInside)
+        if (gazeScript.isVisible && positionScript.isInside)
         {
-            if (!gazeScript.isVisible && positionScript.isInside)
-            {
-                LayoutSwitch();
-                nextLevel = true;
-            }
+            LayoutSwitch();
+            nextLevel = true;
         }
     }
 
-    // Lost
+    // Stairway
     void Beat3()
     {
-    }
+        gazeScript = gazeObject.GetComponent<GazeCheck>();
+        positionScript = triggerEnding.GetComponent<PositionCheck>();
+        print(stairwayPositionScript.isInside);
 
-    // Stairway
-    void Beat4()
-    {
+        if(stairwayPositionScript.isInside)
+        {
+            print("SALUT SA VA");
+            textEnding.SetActive(true);
+
+            if (gazeScript.isVisible && positionScript.isInside)
+            {
+                print("BEN NON ESPÈCE DE CONNE");
+                finalStaircaseSecondHalf.SetActive(true);
+                collisionFront.SetActive(false);
+
+                if (!gazeScript.isVisible && positionScript.isInside)
+                {
+                    print("AH BEN CITRON");
+                    finalStaircaseFirstHalf.SetActive(false);
+                    collisionBack.SetActive(true);
+                }
+            }
+        }
     }
 
     void LayoutSwitch()

@@ -12,6 +12,7 @@ public class PositionCheck : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             isInside = true;
+            //print("inside");
         }
     }
 
@@ -20,6 +21,7 @@ public class PositionCheck : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             isInside = false;
+            //print("outside");
         }
     }
 }
