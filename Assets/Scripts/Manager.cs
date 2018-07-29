@@ -10,17 +10,9 @@ public class Manager : MonoBehaviour
     private PlayerData playerScript;
     private GazeCheck gazeScript;
     private PositionCheck positionScript;
-    private PositionCheck stairwayPositionScript;
-
 
     [HideInInspector]
     public int beat;
-
-    [HideInInspector]
-    public bool gazeOk;
-
-    [HideInInspector]
-    public bool positionOk;
 
     [HideInInspector]
     public float timeMoving;
@@ -72,9 +64,6 @@ public class Manager : MonoBehaviour
         gazeScript = wallStart.GetComponent<GazeCheck>();
         positionScript = wallStart.GetComponent<PositionCheck>();
         deadEndScript = triggerDeadEnd.GetComponent<PositionCheck>();
-        deadEndScript = triggerDeadEnd.GetComponent<PositionCheck>();
-        stairwayPositionScript = triggerEnding.GetComponent<PositionCheck>();
-
     }
 
     void Update()
@@ -158,9 +147,8 @@ public class Manager : MonoBehaviour
     {
         gazeScript = gazeObject.GetComponent<GazeCheck>();
         positionScript = triggerEnding.GetComponent<PositionCheck>();
-        print(stairwayPositionScript.isInside);
 
-        if(stairwayPositionScript.isInside)
+        if(positionScript.isInside)
         {
             print("SALUT SA VA");
             textEnding.SetActive(true);
