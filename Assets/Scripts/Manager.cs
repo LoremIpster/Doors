@@ -39,24 +39,6 @@ public class Manager : MonoBehaviour
     private PositionCheck deadEndScript;
     private bool inDeadEnd;
 
-    [Space]
-
-    [Header("Beat 3")]
-    public GameObject triggerClocks;
-    public GameObject triggerRinger;
-
-    [Space]
-
-    [Header("Beat 4")]
-    public GameObject triggerMusic;
-    public GameObject triggerEnding;
-    public GameObject gazeObject;
-    public GameObject textEnding;
-    public GameObject collisionFront;
-    public GameObject collisionBack;
-    public GameObject finalStaircaseFirstHalf;
-    public GameObject finalStaircaseSecondHalf;
-
     void Start()
     {
         pawn = GameObject.Find("Player");
@@ -85,9 +67,6 @@ public class Manager : MonoBehaviour
             case 2:
                 Beat2();
                 break;
-            case 3:
-                Beat3();
-                break;
         }
     }
 
@@ -100,8 +79,6 @@ public class Manager : MonoBehaviour
         }
 
     }
-
-    
 
     // Intro
     void Beat0()
@@ -139,33 +116,6 @@ public class Manager : MonoBehaviour
         {
             LayoutSwitch();
             nextLevel = true;
-        }
-    }
-
-    // Stairway
-    void Beat3()
-    {
-        gazeScript = gazeObject.GetComponent<GazeCheck>();
-        positionScript = triggerEnding.GetComponent<PositionCheck>();
-
-        if(positionScript.isInside)
-        {
-            print("SALUT SA VA");
-            textEnding.SetActive(true);
-
-            if (gazeScript.isVisible && positionScript.isInside)
-            {
-                print("BEN NON ESPÈCE DE CONNE");
-                finalStaircaseSecondHalf.SetActive(true);
-                collisionFront.SetActive(false);
-
-                if (!gazeScript.isVisible && positionScript.isInside)
-                {
-                    print("AH BEN CITRON");
-                    finalStaircaseFirstHalf.SetActive(false);
-                    collisionBack.SetActive(true);
-                }
-            }
         }
     }
 
