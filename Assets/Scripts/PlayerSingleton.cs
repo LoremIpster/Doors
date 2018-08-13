@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using UnityStandardAssets.ImageEffects;
+
 public class PlayerSingleton : MonoBehaviour
 {
     [SerializeField, Header("Lerp Parameters")]

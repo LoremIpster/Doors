@@ -1,0 +1,826 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49faf33835211694f91b616cbd6e59d7, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
+  m_lastPopulateTimePart2: 0
+  m_lastPopulateTimePsrt1: 0
+  AcousticTextureWwu:
+  - Guid: '{A15307F7-62E9-44A1-A7B4-D05123D6C9C3}'
+    m_lastTimePart2: -1999241681
+    m_lastTimePsrt1: -2044875209
+    ParentPhysicalPath: 
+    PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    List: []
+  AuxBusWwu:
+  - Guid: '{C7D63473-BBC8-462F-8A26-2DD48F50AD41}'
+    m_lastTimePart2: -1999241681
+    m_lastTimePsrt1: -2044984269
+    ParentPhysicalPath: 
+    PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    List: []
+  BankWwu:
+  - Guid: '{8FDECB61-EF0D-4406-83D2-DEBC2C69678A}'
+    m_lastTimePart2: -1999241681
+    m_lastTimePsrt1: -2045208872
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks\Default Work Unit.wwu
+    List:
+    - Guid: db778a5f493d8944b00196ae4de15ede
+      ID: -2035010723
+      Name: DOORS_LOOP
+      Path: Default Work Unit\DOORS_LOOP
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: DOORS_LOOP
+        ObjectType: 7
+  EventWwu:
+  - Guid: '{3FE6EAB8-653A-409F-933D-9106ED41F16E}'
+    m_lastTimePart2: -1999241636
+    m_lastTimePsrt1: -1050557513
+    ParentPhysicalPath: 
+    PhysicalPath: Events\Default Work Unit.wwu
+    List:
+    - Guid: d11e6c1f09534f4e833af68022c02e97
+      ID: -859248171
+      Name: AMB_01_METRO
+      Path: Default Work Unit\AMB_LOOP\AMB_01_METRO
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_01_METRO
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 2a97129e1bd5d14d949a1e2883cc6b87
+      ID: 1556997003
+      Name: AMB_02_RVB
+      Path: Default Work Unit\AMB_LOOP\AMB_02_RVB
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_02_RVB
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 3a9409248cd0a144abad77f5cfe2be40
+      ID: 24430943
+      Name: AMB_03_FALL
+      Path: Default Work Unit\AMB_LOOP\AMB_03_FALL
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_03_FALL
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 5578e6939498664f8ddc2f98f5c2b6f1
+      ID: 1235730649
+      Name: AMB_04_CLOCK
+      Path: Default Work Unit\AMB_LOOP\AMB_04_CLOCK
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_04_CLOCK
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 49e90a37ab32d743a04bbf060c667493
+      ID: -1911236724
+      Name: AMB_05_ROAD
+      Path: Default Work Unit\AMB_LOOP\AMB_05_ROAD
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_05_ROAD
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 8f9543e18472ca45ae5220a827e9a92d
+      ID: 249507449
+      Name: AMB_06_CHAOS
+      Path: Default Work Unit\AMB_LOOP\AMB_06_CHAOS
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_06_CHAOS
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 97bea1581166994399d16ec8fa022782
+      ID: -39422126
+      Name: AMB_07_RAIN
+      Path: Default Work Unit\AMB_LOOP\AMB_07_RAIN
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_07_RAIN
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 67c8e0c04dd45b4f9704cb9c3324ffc3
+      ID: -1140651692
+      Name: AMB_BELL_01_BACKGROUND
+      Path: Default Work Unit\AMB\AMB_BELL\AMB_BELL_01_BACKGROUND
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_BELL
+        ObjectType: 4
+      - ElementName: AMB_BELL_01_BACKGROUND
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: eaab8a31d817b6468414691fb67f8531
+      ID: 1137303806
+      Name: AMB_BELL_02
+      Path: Default Work Unit\AMB\AMB_BELL\AMB_BELL_02
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_BELL
+        ObjectType: 4
+      - ElementName: AMB_BELL_02
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 589c1eb6d0a72442825c480cb71c38fd
+      ID: 1137303807
+      Name: AMB_BELL_03
+      Path: Default Work Unit\AMB\AMB_BELL\AMB_BELL_03
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_BELL
+        ObjectType: 4
+      - ElementName: AMB_BELL_03
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 371038161ab21847b052b155841e0c09
+      ID: 1137303800
+      Name: AMB_BELL_04
+      Path: Default Work Unit\AMB\AMB_BELL\AMB_BELL_04
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_BELL
+        ObjectType: 4
+      - ElementName: AMB_BELL_04
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 88e892e604038d45bb23b1abef877cfc
+      ID: 1137303801
+      Name: AMB_BELL_05
+      Path: Default Work Unit\AMB\AMB_BELL\AMB_BELL_05
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_BELL
+        ObjectType: 4
+      - ElementName: AMB_BELL_05
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 46e1826e02721840b85b6bfce43f7a0b
+      ID: 1137303802
+      Name: AMB_BELL_06
+      Path: Default Work Unit\AMB\AMB_BELL\AMB_BELL_06
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_BELL
+        ObjectType: 4
+      - ElementName: AMB_BELL_06
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 8041d91bd97de44c9769d0e51f05a467
+      ID: 1137303803
+      Name: AMB_BELL_07
+      Path: Default Work Unit\AMB\AMB_BELL\AMB_BELL_07
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_BELL
+        ObjectType: 4
+      - ElementName: AMB_BELL_07
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: d5796ae3b873ec4a971e2f5a1a1908cf
+      ID: 1137303796
+      Name: AMB_BELL_08
+      Path: Default Work Unit\AMB\AMB_BELL\AMB_BELL_08
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_BELL
+        ObjectType: 4
+      - ElementName: AMB_BELL_08
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: aa33212c52d4c846808b2d97c30465e1
+      ID: 1137303797
+      Name: AMB_BELL_09
+      Path: Default Work Unit\AMB\AMB_BELL\AMB_BELL_09
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_BELL
+        ObjectType: 4
+      - ElementName: AMB_BELL_09
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: b39d0edf25eb8b4ea4f942127a1506b6
+      ID: 1570068341
+      Name: AMB_BELL_ALL
+      Path: Default Work Unit\AMB_LOOP\AMB_BELL_ALL
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_BELL_ALL
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 1acbccb00a20794ebf00bd2f1a6e8bc8
+      ID: 812479352
+      Name: AMB_FOREST_01_BACKGROUND
+      Path: Default Work Unit\AMB\AMB_FOREST\AMB_FOREST_01_BACKGROUND
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_FOREST
+        ObjectType: 4
+      - ElementName: AMB_FOREST_01_BACKGROUND
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e2644e5a868ada43a0680416e8f2590c
+      ID: -1003510294
+      Name: AMB_FOREST_02
+      Path: Default Work Unit\AMB\AMB_FOREST\AMB_FOREST_02
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_FOREST
+        ObjectType: 4
+      - ElementName: AMB_FOREST_02
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: d965288c5593e14d9e252c6e4ae5db46
+      ID: -1003510293
+      Name: AMB_FOREST_03
+      Path: Default Work Unit\AMB\AMB_FOREST\AMB_FOREST_03
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_FOREST
+        ObjectType: 4
+      - ElementName: AMB_FOREST_03
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 80e97e860247974cb374f0537ef4f53c
+      ID: -1003510292
+      Name: AMB_FOREST_04
+      Path: Default Work Unit\AMB\AMB_FOREST\AMB_FOREST_04
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_FOREST
+        ObjectType: 4
+      - ElementName: AMB_FOREST_04
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 1c6e77255092784b9d12a6fbe0d636a7
+      ID: -1003510291
+      Name: AMB_FOREST_05
+      Path: Default Work Unit\AMB\AMB_FOREST\AMB_FOREST_05
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_FOREST
+        ObjectType: 4
+      - ElementName: AMB_FOREST_05
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: c0c051084f58ae4e8ec9d9b8233a1d00
+      ID: -1003510290
+      Name: AMB_FOREST_06
+      Path: Default Work Unit\AMB\AMB_FOREST\AMB_FOREST_06
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_FOREST
+        ObjectType: 4
+      - ElementName: AMB_FOREST_06
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 2d615d281faf524e831e6b15ebce3e3d
+      ID: -1869782663
+      Name: AMB_FOREST_ALL
+      Path: Default Work Unit\AMB_LOOP\AMB_FOREST_ALL
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_FOREST_ALL
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: c63a2a984a47124bad7f73b8436c2c93
+      ID: 1376104461
+      Name: AMB_RAIN_01_BACKGROUND
+      Path: Default Work Unit\AMB\AMB_RAIN\AMB_RAIN_01_BACKGROUND
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_RAIN
+        ObjectType: 4
+      - ElementName: AMB_RAIN_01_BACKGROUND
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 8573f7b7dad0c94f8ce9d594e5d9c85e
+      ID: 886693649
+      Name: AMB_RAIN_02
+      Path: Default Work Unit\AMB\AMB_RAIN\AMB_RAIN_02
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_RAIN
+        ObjectType: 4
+      - ElementName: AMB_RAIN_02
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: ff599dd24122c340aae2b2a0922870fe
+      ID: 886693648
+      Name: AMB_RAIN_03
+      Path: Default Work Unit\AMB\AMB_RAIN\AMB_RAIN_03
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_RAIN
+        ObjectType: 4
+      - ElementName: AMB_RAIN_03
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: cc3c7f6e7b17db4094738b6be31a73bf
+      ID: 886693655
+      Name: AMB_RAIN_04
+      Path: Default Work Unit\AMB\AMB_RAIN\AMB_RAIN_04
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_RAIN
+        ObjectType: 4
+      - ElementName: AMB_RAIN_04
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 8dcee8755294ca46b8f5816ce23c7177
+      ID: 886693654
+      Name: AMB_RAIN_05
+      Path: Default Work Unit\AMB\AMB_RAIN\AMB_RAIN_05
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_RAIN
+        ObjectType: 4
+      - ElementName: AMB_RAIN_05
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: f18b9045e6930d4c97d89f27cf270fc1
+      ID: 886693653
+      Name: AMB_RAIN_06
+      Path: Default Work Unit\AMB\AMB_RAIN\AMB_RAIN_06
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_RAIN
+        ObjectType: 4
+      - ElementName: AMB_RAIN_06
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 4f7734c47c0ea54e9e0aa88b7a309c51
+      ID: 886693652
+      Name: AMB_RAIN_07
+      Path: Default Work Unit\AMB\AMB_RAIN\AMB_RAIN_07
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_RAIN
+        ObjectType: 4
+      - ElementName: AMB_RAIN_07
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: cf2ef5f8acf74a47929270ee5703991c
+      ID: -985266811
+      Name: AMB_ROAD_01_BACKGROUND
+      Path: Default Work Unit\AMB\AMB_ROAD\AMB_ROAD_01_BACKGROUND
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_ROAD
+        ObjectType: 4
+      - ElementName: AMB_ROAD_01_BACKGROUND
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 9cb0b1c992eb5d4081624fdc905828fe
+      ID: 1682425753
+      Name: AMB_ROAD_02
+      Path: Default Work Unit\AMB\AMB_ROAD\AMB_ROAD_02
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_ROAD
+        ObjectType: 4
+      - ElementName: AMB_ROAD_02
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 31f65f918d32f049951d0940334e2e3e
+      ID: 1682425752
+      Name: AMB_ROAD_03
+      Path: Default Work Unit\AMB\AMB_ROAD\AMB_ROAD_03
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: AMB_ROAD
+        ObjectType: 4
+      - ElementName: AMB_ROAD_03
+        ObjectType: 3
+      maxAttenuation: 20
+      maxDuration: 0
+      minDuration: 0
+    - Guid: b3275997066bf64d88f28cde0febe247
+      ID: -973923361
+      Name: AMB_SEA_ALL
+      Path: Default Work Unit\AMB_LOOP\AMB_SEA_ALL
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_SEA_ALL
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 5358b2a2be52ad4c9d7aedf960aab2f8
+      ID: 1157423267
+      Name: AMB_WATER_ALL
+      Path: Default Work Unit\AMB_LOOP\AMB_WATER_ALL
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 4
+      - ElementName: AMB_WATER_ALL
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: d7dde38d0953a4468fd3322d14a3eda9
+      ID: -1841390773
+      Name: MUS_02
+      Path: Default Work Unit\MUS\MUS_02
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MUS
+        ObjectType: 4
+      - ElementName: MUS_02
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 54e6b41322bdfc4a9fd1f32170e8c2cd
+      ID: -1841390774
+      Name: MUS_03
+      Path: Default Work Unit\MUS\MUS_03
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MUS
+        ObjectType: 4
+      - ElementName: MUS_03
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 98fb1e01775e2d46be75a665f725be05
+      ID: 1973954843
+      Name: MUS_START
+      Path: Default Work Unit\MUS\MUS_START
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MUS
+        ObjectType: 4
+      - ElementName: MUS_START
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: dd32b1f9e06be84aaef06aaf4ed12f91
+      ID: -1618232390
+      Name: SFX_DOOR_LOCKED
+      Path: Default Work Unit\SFX\SFX_DOOR_LOCKED
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_DOOR_LOCKED
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 616ed20f49201a4ebd35daa03f8e1762
+      ID: 1514860704
+      Name: SFX_DOOR_OPEN
+      Path: Default Work Unit\SFX\SFX_DOOR_OPEN
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_DOOR_OPEN
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  ExpandedItems:
+  - /DOORS
+  - /DOORS/Events
+  - /DOORS/Events/Default Work Unit
+  - /DOORS/Events/Default Work Unit/AMB_LOOP
+  RtpcWwu:
+  - Guid: '{D68FCB1E-08E9-4A75-B69F-CE804ACCD10F}'
+    m_lastTimePart2: -1999241681
+    m_lastTimePsrt1: -2045233925
+    ParentPhysicalPath: 
+    PhysicalPath: Game Parameters\Default Work Unit.wwu
+    List: []
+  StateWwu:
+  - Guid: '{A832CD6A-A583-4CB0-9975-E39B44A71E43}'
+    m_lastTimePart2: -1999241681
+    m_lastTimePsrt1: -2044974655
+    ParentPhysicalPath: 
+    PhysicalPath: States\Default Work Unit.wwu
+    List:
+    - Guid: 8ffa51a661e1a44789198bb373b03de2
+      ID: 1289469964
+      Name: AMB_LOOP
+      Path: Default Work Unit\AMB_LOOP
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 9
+      ValueGuids:
+      - bytes: 07e0aa8bccbf644a8999d33c3dd48a1c
+      - bytes: b5b68eba4450b3418ea21f03913e5895
+      - bytes: 2556fcf038f0744f97aa05815fafe530
+      - bytes: 45957e5bf8aa3342a39d3d4d4f2be3d9
+      - bytes: 3b05a2b38987d740843007898fccbb91
+      - bytes: 2c6aadce3ccbef4194c48a59ad99044c
+      - bytes: ab70db26b2322a40ab00264c7a3db41a
+      - bytes: 993f7d13aad5fc4c931e5843fbe5b349
+      ValueIcons:
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: ROOM_BEACH
+        ObjectType: 8
+      - ElementName: ROOM_CHAOS
+        ObjectType: 8
+      - ElementName: ROOM_CLOCK
+        ObjectType: 8
+      - ElementName: ROOM_METRO
+        ObjectType: 8
+      - ElementName: ROOM_RAIN
+        ObjectType: 8
+      - ElementName: ROOM_REVERB
+        ObjectType: 8
+      - ElementName: ROOM_ROAD
+        ObjectType: 8
+      valueIDs: db3ba32cb8ec9550c5f909656f8a59034e5fbc4e611944fae7004d0c790453e6
+      values:
+      - None
+      - ROOM_BEACH
+      - ROOM_CHAOS
+      - ROOM_CLOCK
+      - ROOM_METRO
+      - ROOM_RAIN
+      - ROOM_REVERB
+      - ROOM_ROAD
+    - Guid: dc7aad5ca688c44f9896abea9c2aac0c
+      ID: 712897226
+      Name: MUS
+      Path: Default Work Unit\MUS
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MUS
+        ObjectType: 9
+      ValueGuids:
+      - bytes: 3eb59794d452f546bf325c9df4a3ff36
+      - bytes: 733440cdfaf1b447ad9a4e9358a500de
+      - bytes: b4b8f995533cf74ea936290026faddeb
+      - bytes: 20552bf1ae7c8a41bdc2e902ee1b1b50
+      ValueIcons:
+      - ElementName: MUS_01
+        ObjectType: 8
+      - ElementName: MUS_02
+        ObjectType: 8
+      - ElementName: MUS_03
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: 489b3e924b9b3e924a9b3e92db3ba32c
+      values:
+      - MUS_01
+      - MUS_02
+      - MUS_03
+      - None
+  SwitchWwu:
+  - Guid: '{99DEA107-BBEC-4912-805B-B38AE97B55DE}'
+    m_lastTimePart2: -1999241681
+    m_lastTimePsrt1: -2045129758
+    ParentPhysicalPath: 
+    PhysicalPath: Switches\Default Work Unit.wwu
+    List:
+    - Guid: e00616af3d16bf4f8becb9f17c37ab0e
+      ID: 1289469964
+      Name: AMB_LOOP
+      Path: Default Work Unit\AMB_LOOP
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMB_LOOP
+        ObjectType: 11
+      ValueGuids:
+      - bytes: e5c2e5c02053904392a1662187d86e1f
+      - bytes: c87140195687454bb8a5214f9c6de83e
+      - bytes: 60a5ceaae8d4a8419ceecfeae4f2e6dc
+      - bytes: 0b9dd30d319edc49b039d12ba120aac5
+      - bytes: 156ae5a44287174ea6a3c7d6caaf9cef
+      - bytes: 1d6e198449e0f44d9a086e543cfc01e2
+      - bytes: 42ba4beffa71104e954fd6f9225c48be
+      ValueIcons:
+      - ElementName: ROOM_BEACH
+        ObjectType: 10
+      - ElementName: ROOM_CHAOS
+        ObjectType: 10
+      - ElementName: ROOM_CLOCL
+        ObjectType: 10
+      - ElementName: ROOM_METRO
+        ObjectType: 10
+      - ElementName: ROOM_RAIN
+        ObjectType: 10
+      - ElementName: ROOM_REVERB
+        ObjectType: 10
+      - ElementName: ROOM_ROAD
+        ObjectType: 10
+      valueIDs: b8ec9550c5f90965688a59034e5fbc4e611944fae7004d0c790453e6
+      values:
+      - ROOM_BEACH
+      - ROOM_CHAOS
+      - ROOM_CLOCL
+      - ROOM_METRO
+      - ROOM_RAIN
+      - ROOM_REVERB
+      - ROOM_ROAD
+  TriggerWwu:
+  - Guid: '{333947F4-6FCF-4875-ADF7-23B62811F2EF}'
+    m_lastTimePart2: -1999241681
+    m_lastTimePsrt1: -2045174252
+    ParentPhysicalPath: 
+    PhysicalPath: Triggers\Default Work Unit.wwu
+    List: []

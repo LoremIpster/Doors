@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class AudioPlayer : MonoBehaviour {
     [SerializeField]
-    AudioClip clip;
-    [SerializeField]
-    AudioSource source;
-    [SerializeField]
-    float volume;
+    string m_eventName;
+
     [SerializeField]
     public bool canPlayOnlyOnce;
 
@@ -20,10 +17,7 @@ public class AudioPlayer : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             once = true;
-            source.Stop();
-            source.clip = clip;
-            source.volume = volume;
-            source.Play();
+            AkSoundEngine.PostEvent(m_eventName, gameObject);
         }
     }
 
