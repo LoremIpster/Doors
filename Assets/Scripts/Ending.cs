@@ -41,7 +41,6 @@ public class Ending : MonoBehaviour
         if (!gazeScript.isVisible && positionScript.isInside && !textDisplayed)
         {
             textEnding.SetActive(true);
-            finalStaircaseFirstHalf.SetActive(false);
             staircaseReady = true;
             textDisplayed = true;
         }
@@ -55,13 +54,14 @@ public class Ending : MonoBehaviour
         if (!gazeScript.isVisible && positionScript.isInside && textDisplayed)
         {
             textEnding.SetActive(true);
+            finalStaircaseFirstHalf.SetActive(false);
             collisionBack.SetActive(true);
         }
     }
 
     private void Reset()
     {
-        if (restartScript.isInside)
+        if(restartScript.isInside)
         {
             textDisplayed = false;
             staircaseReady = false;
@@ -70,6 +70,6 @@ public class Ending : MonoBehaviour
             collisionBack.SetActive(false);
             collisionFront.SetActive(true);
         }
-    }
+    }   
 
 }
