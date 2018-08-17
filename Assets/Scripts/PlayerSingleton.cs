@@ -13,7 +13,8 @@ public class PlayerSingleton : MonoBehaviour
     Vector3 initialPosition = new Vector3(0f, 1f, 3.5f);
     public static PlayerSingleton s_player;
     public bool m_loadedOnce = false;
-    // Use this for initialization
+    private bool fadeInComplete;
+
     void Awake()
     {
         if (s_player == null)
@@ -22,8 +23,16 @@ public class PlayerSingleton : MonoBehaviour
             Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
-        StartCoroutine(FadeInLines());
+        //StartCoroutine(FadeInLines());
+    }
 
+    void Update()
+    {
+        if (Input.anyKey && !fadeInComplete)
+        {
+            StartCoroutine(FadeInLines());
+            fadeInComplete = true;
+        }
     }
 
     IEnumerator FadeInLines()
