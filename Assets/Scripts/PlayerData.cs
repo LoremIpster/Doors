@@ -5,11 +5,14 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour {
 
 	private bool isMoving;
-	private bool isLooking;
-	private bool headedNorth;
-	public Transform playerTransform;
+    private bool isLooking;
+    private bool headedNorth;
 
+    [HideInInspector]
+    public Transform playerTransform;
+    [HideInInspector]
     public float timeMoving;
+    [HideInInspector]
     public float timeStill;
 
     private float currentLocation;

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Manager : MonoBehaviour
@@ -52,6 +53,11 @@ public class Manager : MonoBehaviour
     {
         BeatMachine();
         IncrementBeat();
+
+        if (Input.GetKeyDown(KeyCode.F12))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     void BeatMachine()
