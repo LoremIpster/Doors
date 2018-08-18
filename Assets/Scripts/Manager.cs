@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
-
     private bool nextLevel;
     private GameObject pawn;
     private PlayerData playerScript;
@@ -24,6 +24,7 @@ public class Manager : MonoBehaviour
     [Space]
 
     [Header("Beat 1")]
+    public Image fadeInOverlay;
     public GameObject wallStart;
     public GameObject triggerStart;
     public GameObject doorCover;
@@ -89,9 +90,11 @@ public class Manager : MonoBehaviour
     // Intro
     void Beat0()
     {
+        fadeInOverlay.GetComponent<Image>().CrossFadeAlpha(0, 2.0f, false);
+
         timeMoving = playerScript.timeMoving;
 
-        if(timeMoving > 5)
+        if (timeMoving > 5)
         {
             nextLevel = true;
         }
