@@ -33,7 +33,9 @@ public class Manager : MonoBehaviour
     [Space]
 
     [Header("Beat 2")]
+    public GameObject tower;
     public GameObject doorDeadEnd;
+    public GameObject wallDeadEnd;
     public GameObject triggerDoor;
     public GameObject triggerDeadEnd;
     public GameObject triggerColor;
@@ -63,7 +65,7 @@ public class Manager : MonoBehaviour
 
     void BeatMachine()
     {
-        switch(beat)
+        switch (beat)
         {
             case 0:
                 Beat0();
@@ -74,12 +76,15 @@ public class Manager : MonoBehaviour
             case 2:
                 Beat2();
                 break;
+            case 3:
+                Beat3();
+                break;
         }
     }
 
     void IncrementBeat()
     {
-        if(nextLevel)
+        if (nextLevel)
         {
             beat++;
             nextLevel = false;
@@ -108,7 +113,8 @@ public class Manager : MonoBehaviour
 
         RevertLayoutSwitch();
 
-        if(gazeScript.isVisible && positionScript.isInside){
+        if (gazeScript.isVisible && positionScript.isInside)
+        {
             doorStart.SetActive(true);
             doorCover.SetActive(false);
             nextLevel = true;
@@ -128,6 +134,21 @@ public class Manager : MonoBehaviour
         }
     }
 
+    // Wall Follow
+    void Beat3()
+    {
+        gazeScript = tower.GetComponent<GazeCheck>();
+
+        if (gazeScript.isVisible)
+        {
+            if (wallDeadEnd.transform.localPosition.z - pawn.transform.localPosition.z >= 2)
+            {
+                wallDeadEnd.transform.position = new Vector3(wallDeadEnd.transform.localPosition.x, wallDeadEnd.transform.localPosition.y, pawn.transform.localPosition.z + 2);
+            }
+        }
+
+    }
+
     void LayoutSwitch()
     {
         triggerColor.SetActive(true);
@@ -139,6 +160,8 @@ public class Manager : MonoBehaviour
         {
             deletedGO.SetActive(false);
         }
+
+
     }
 
     void RevertLayoutSwitch()

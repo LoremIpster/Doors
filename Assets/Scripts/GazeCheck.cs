@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GazeCheck : MonoBehaviour {
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool isVisible;
 
 
