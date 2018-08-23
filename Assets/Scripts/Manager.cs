@@ -95,7 +95,7 @@ public class Manager : MonoBehaviour
     // Intro
     void Beat0()
     {
-        fadeInOverlay.GetComponent<Image>().CrossFadeAlpha(0, 2.0f, false);
+        fadeInOverlay.CrossFadeAlpha(0, 2.0f, false);
 
         timeMoving = playerScript.timeMoving;
 
