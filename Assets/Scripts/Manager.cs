@@ -59,7 +59,7 @@ public class Manager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F12))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            ReloadScene.s_instance.sceneAllowed = true;
         }
     }
 

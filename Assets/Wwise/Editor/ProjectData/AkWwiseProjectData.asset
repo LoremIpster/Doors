@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -24,8 +24,8 @@ MonoBehaviour:
     List: []
   AuxBusWwu:
   - Guid: '{C7D63473-BBC8-462F-8A26-2DD48F50AD41}'
-    m_lastTimePart2: -1999241681
-    m_lastTimePsrt1: -2044984269
+    m_lastTimePart2: -1999238822
+    m_lastTimePsrt1: 299021996
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     List: []
@@ -47,8 +47,8 @@ MonoBehaviour:
         ObjectType: 7
   EventWwu:
   - Guid: '{3FE6EAB8-653A-409F-933D-9106ED41F16E}'
-    m_lastTimePart2: -1999241636
-    m_lastTimePsrt1: -1050557513
+    m_lastTimePart2: -1999238823
+    m_lastTimePsrt1: -962027483
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -179,7 +179,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_BELL_02
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 589c1eb6d0a72442825c480cb71c38fd
@@ -195,7 +195,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_BELL_03
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 371038161ab21847b052b155841e0c09
@@ -211,7 +211,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_BELL_04
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 88e892e604038d45bb23b1abef877cfc
@@ -227,7 +227,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_BELL_05
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 46e1826e02721840b85b6bfce43f7a0b
@@ -243,7 +243,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_BELL_06
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 8041d91bd97de44c9769d0e51f05a467
@@ -259,7 +259,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_BELL_07
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: d5796ae3b873ec4a971e2f5a1a1908cf
@@ -275,7 +275,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_BELL_08
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: aa33212c52d4c846808b2d97c30465e1
@@ -291,7 +291,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_BELL_09
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: b39d0edf25eb8b4ea4f942127a1506b6
@@ -337,7 +337,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_FOREST_02
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: d965288c5593e14d9e252c6e4ae5db46
@@ -353,7 +353,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_FOREST_03
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 80e97e860247974cb374f0537ef4f53c
@@ -369,7 +369,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_FOREST_04
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 1c6e77255092784b9d12a6fbe0d636a7
@@ -385,7 +385,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_FOREST_05
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: c0c051084f58ae4e8ec9d9b8233a1d00
@@ -401,7 +401,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_FOREST_06
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 2d615d281faf524e831e6b15ebce3e3d
@@ -447,7 +447,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_RAIN_02
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: ff599dd24122c340aae2b2a0922870fe
@@ -463,7 +463,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_RAIN_03
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: cc3c7f6e7b17db4094738b6be31a73bf
@@ -479,7 +479,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_RAIN_04
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 8dcee8755294ca46b8f5816ce23c7177
@@ -495,7 +495,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_RAIN_05
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: f18b9045e6930d4c97d89f27cf270fc1
@@ -511,7 +511,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_RAIN_06
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 4f7734c47c0ea54e9e0aa88b7a309c51
@@ -527,7 +527,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_RAIN_07
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: cf2ef5f8acf74a47929270ee5703991c
@@ -559,7 +559,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_ROAD_02
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 31f65f918d32f049951d0940334e2e3e
@@ -575,7 +575,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: AMB_ROAD_03
         ObjectType: 3
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: b3275997066bf64d88f28cde0febe247
@@ -681,6 +681,8 @@ MonoBehaviour:
   - /DOORS/Events
   - /DOORS/Events/Default Work Unit
   - /DOORS/Events/Default Work Unit/AMB_LOOP
+  - /DOORS/SoundBanks
+  - /DOORS/SoundBanks/Default Work Unit
   RtpcWwu:
   - Guid: '{D68FCB1E-08E9-4A75-B69F-CE804ACCD10F}'
     m_lastTimePart2: -1999241681
